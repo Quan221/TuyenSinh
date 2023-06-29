@@ -7,7 +7,10 @@ router = routers.DefaultRouter()
 
 router.register('users', views.UserViewSet, basename='user')
 router.register('quan', views.QuanViewSet, basename='quan')
-router.register('products', views.ProductViewSet, basename='product')
+router.register('dontuyensinh', views.DonTuyenSinhViewSet, basename='dontuyensinh')
+router.register('trinhdo', views.TrinhDoViewSet, basename='trinhdo')
+router.register('dangkyhoc', views.DangKyHocViewSet, basename='dangkyhoc')
+
 
 urlpatterns = [
     path('', include(router.urls)),
